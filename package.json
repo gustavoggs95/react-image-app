@@ -3,15 +3,16 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "android": "react-native start && cd ./android && ./gradlew app:assembleDebug && ./gradlew installDebug"
   },
   "dependencies": {
     "react": "16.9.0",
-    "react-native": "0.61.3"
+    "react-native": "0.61.3",
+    "react-native-navigation": "^3.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
