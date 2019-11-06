@@ -12,7 +12,7 @@ const Home = () => {
         <Text>
             Home!
         </Text>
-        <Icon name="rocket" size={50} color="#900" />
+        <Icon name="rocket" size={55} color="#900" />
     </View>
   );
 };
