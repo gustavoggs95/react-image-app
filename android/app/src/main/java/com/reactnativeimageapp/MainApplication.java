@@ -18,6 +18,7 @@ import java.util.Arrays;
 import java.util.List;
 import io.invertase.firebase.RNFirebasePackage;
 import io.invertase.firebase.storage.RNFirebaseStoragePackage;
+import io.invertase.firebase.database.RNFirebaseDatabasePackage;
 
 public class MainApplication extends NavigationApplication {
 
@@ -44,7 +45,8 @@ public class MainApplication extends NavigationApplication {
             new VectorIconsPackage(),
             new RNFirebasePackage(),
             new RNFirebaseStoragePackage(),
-            new ImagePickerPackage()
+            new ImagePickerPackage(),
+            new RNFirebaseDatabasePackage()
         );
     }
 

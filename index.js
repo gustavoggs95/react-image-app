@@ -6,18 +6,16 @@ import App from './App';
 import Home from './src/containers/Home'
 import Profile from './src/containers/Profile'
 import Upload from './src/containers/Upload'
+import ImageViewer from './src/containers/ImageViewer'
+
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 Navigation.registerComponent(`App`, () => App);
 Navigation.registerComponent(`Home`, () => Home);
 Navigation.registerComponent(`Profile`, () => Profile);
 Navigation.registerComponent(`Upload`, () => Upload);
+Navigation.registerComponent(`ImageViewer`, () => ImageViewer);
 
-
-
-// Icon.getImageSource('user', 20, 'red').then((source) => {
-
-// });
 
 Navigation.events().registerAppLaunchedListener(() => {
   Promise.all([
@@ -28,6 +26,7 @@ Navigation.events().registerAppLaunchedListener(() => {
     Navigation.setRoot({
       root: {
           stack: {
+              id: 'mainStack',
               children: [
                   {
                       bottomTabs: {
